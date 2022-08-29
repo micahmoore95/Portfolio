@@ -39,6 +39,7 @@ header a {
 
 header nav {
     margin: 7px 0;
+    overflow: hidden;
 }
 
 header ul {
@@ -49,7 +50,7 @@ header ul {
 }
 
 header nav ul li {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -61,4 +62,58 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-weight: lighter;
+    font-size: 1.55vw;
+    display: inline-flex;
+    border: none;
+    outline: none;
+    color: rgba(240, 238, 238, 1.0);
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(5, 69, 129, 0.7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hero {
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+.hero img {
+    width: 540px;
+    height: auto;
+}
+
+section {
+    padding-top: 75px;
 }

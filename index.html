@@ -13,8 +13,18 @@
                     <li>
                         <a href="#about-me">About Me</a>
                     </li>
-                    <li>
-                        <a href="#my-work">My Work</a>
+                    <li class="dropdown">
+                        <button class="dropbtn">My Projects
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <ul>
+                            <li>
+                        <a class="dropdown-content" href="#my-work">My Works</a>
+                        </li>
+                        <li>
+                        <a class="dropdown-content" href="#wip">Works In Progress</a>
+                        </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -24,10 +34,10 @@
         </header>
 
 <!--Hero/Picture-->
-    <section class="hero">
+    <div class="hero">
         <h2>This is Me:</h2>
         <img src="Assets\Images\Profile.jpg" alt="Micah">
-    </section>
+    </div>
 
 <!-- About Me-->
     <section id="about-me">
@@ -38,7 +48,7 @@
         </p>
     </section>    
 
-<!--My Projects-->
+<!--My Works-->
     <section id="my-work">
         <h2>My Work</h2>
 
@@ -67,6 +77,12 @@
         </a>
         </p>
     </section>
+
+<!-- Work In Progress -->
+    <section id="wip">
+        <p>Hello this is a wip too</p>
+    </section>
+
 <!--Contact Info-->
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
