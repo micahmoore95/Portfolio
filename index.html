@@ -11,19 +11,17 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#about-me">About Me</a>
+                        <a href="#aboutmesection">About Me</a>
                     </li>
                     <li class="dropdown">
-                        <button class="dropbtn">My Projects
-                            <i class="fa fa-caret-down"></i>
-                        </button>
+                        <button class="dropbtn">My Projects</button>
                         <ul class="dropdown-content">
                             <li>
-                        <a href="#my-work">My Works</a>
-                        </li>
-                        <li>
-                        <a href="#wip">Works In Progress</a>
-                        </li>
+                                <a href="#my-work">My Works</a>
+                            </li>
+                            <li>
+                                <a href="#wip">Works In Progress</a>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -35,15 +33,17 @@
 
 <!--Hero/Picture-->
     <div class="hero">
-        <h2>This is Me:</h2>
-        <img src="Assets\Images\Profile.jpg" alt="Micah">
+        <h2>This is me:</h2>
+        <img src="Assets\Images/me.jpg" alt="Micah">
     </div>
 
 <!-- About Me-->
-    <section id="about-me">
+<section id="aboutmesection"></section>
+    <div id="about-me">
         <div class="column">
         <div class="personal-life">
-        <button class="personalbtn" id="personalBtn">About Me</button>
+            <h2>Personal Life</h2>
+        <!-- <button class="personalbtn" id="personalBtn">About Me</button> -->
             </div>
         <div class="personal-content" id="personalContent">
             My name is Micah Moore and I am a husband and father. I have many hobbies including running, drawing, fishing, camping, playing sports, and reading. Learning and trying new things is what really drives and pushes me every day.
@@ -51,13 +51,14 @@
         </div>
         <div class="column">
         <div class="technologies">
-            <button class="technologiesbtn" id="techBtn">My Technologies</button>
+            <h2>Technical Knowledge</h2>
+            <!-- <button class="technologiesbtn" id="techBtn">My Technologies</button> -->
             </div>
         <div class="technologies-content" id="techContent">
             I am a budding developer! Some of the technologies I have learned or am currently learning are: HTML, CSS, Javascript, SQL, Node, React, MongoDB
         </div>
         </div>
-    </section>    
+    </div>    
 
 <!--My Works-->
     <section id="my-work">
@@ -151,6 +152,28 @@
                             <p class="description">An inventory app for keeping track of foods and expiration dates in your refrigerator.</p>
                             <a href="https://dry-inlet-29870.herokuapp.com/"><h3>Deployed Application</h3></a>
                             <a href="https://github.com/Nesnah1307/spoiled-milk"><h3>Github Repository</h3></a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="card-column">
+                <div class="card">
+                    <img src="Assets/Images/construction.jfif" class="project-image">
+                        <div class="container">
+                            <h4><b>React Portfolio</b></h4>
+                            <p class="description">Building a new portfolio using React.</p>
+                            <a href="https://github.com/micahmoore95/react-portfolio"><h3>Github Repository</h3></a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="card-column">
+                <div class="card">
+                    <img src="Assets/Images/construction.jfif" class="project-image">
+                        <div class="container">
+                            <h4><b>Backyard Ultra Timer</b></h4>
+                            <p class="description">A new and easy timer for an exciting new type of race, the backyard ultramarathon.</p>
+                            <a href="https://github.com/micahmoore95/backyard-ultra-timer"><h3>Github Repository</h3></a>
                         </div>
                 </div>
             </div>

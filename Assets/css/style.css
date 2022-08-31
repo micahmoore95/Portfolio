@@ -115,7 +115,8 @@ header nav ul li a {
 }
 
 .hero img {
-    width: 540px;
+    width: 100%;
+    max-width: 400px;
     height: auto;
 }
 
@@ -133,12 +134,13 @@ section {
 
 .column {
     display: flex;
+    flex-direction: column;
     flex-basis: 100%;
     flex: 1;
     justify-content: center;
 }
 
-.personalbtn {
+/* .personalbtn {
     font-weight: lighter;
     font-size: 1.55vw;
     display: flex;
@@ -158,15 +160,22 @@ section {
 
 .personalbtn:hover {
     background-color: var(--dbseven);
-}
+} */
 
 #personalContent {
-    display: none;
+    display: flex;
     color: var(--offwhite);
     text-align: center;
 }
 
-.technologiesbtn {
+.personal-life h2 {
+    padding: 20px 10px 10px 10px;
+    color: var(--offwhite);
+    text-align: center;
+    z-index: 1;
+}
+
+/* .technologiesbtn {
     font-weight: lighter;
     font-size: 1.55vw;
     display: flex;
@@ -184,12 +193,19 @@ section {
 
 .technologiesbtn:hover {
     background-color: var(--dbseven);
-}
+} */
 
 #techContent {
-    display: none;
+    display: flex;
     color: var(--offwhite);
     text-align: center;
+}
+
+.technologies h2 {
+    padding: 20px 10px 10px 10px;
+    color: var(--offwhite);
+    text-align: center;
+    z-index: 1;
 }
 
 .my-work-head {
@@ -197,7 +213,7 @@ section {
     font-size: xx-large;
     margin-bottom: 10px;
     padding: 10px 0 10px 0;
-    background-color: var(--darkblue);
+    background-color: var(--dbseven);
     color: var(--offwhite);
 
 }
@@ -254,6 +270,18 @@ section {
     padding: 2px 16px;
 }
 
+.container h4 {
+    font-size: larger;
+    padding: 5px 0;
+}
+
+.container a {
+    text-decoration: none;
+    color: var(--darkblue);
+    background-color: var(--offwhite);
+    border-radius: 4px;
+}
+
 @media screen and (max-width: 600px) {
     .card-column {
       width: 100%;
@@ -267,9 +295,9 @@ section {
     font-size: xx-large;
     margin-bottom: 10px;
     padding: 10px 0 10px 0;
-    background-color: var(--darkblue);
+    background-color: var(--dbseven);
     color: var(--offwhite);
-
+    
 }
 
 #wip img {
